@@ -11,7 +11,7 @@ package praktikumpemrograman;
 import java.util.Locale;
 import java.util.Scanner;
 public class PRAK101_2110817310002_MuhammadAsandyPutra {
-    
+    public static void main(String[] args){
     Scanner in = new Scanner(System.in).useLocale(Locale.US);
         String NAMA,LAHIR;
         String Bulan= null;
