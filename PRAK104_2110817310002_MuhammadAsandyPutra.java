@@ -13,8 +13,9 @@ import java.util.Scanner;
 public class PRAK104_2110817310002_MuhammadAsandyPutra {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        int InputAngka1,InputAngka2,InputAngka3,InputAngka4,InputAngka5,InputAngka6;
-        int HasilAndi,HasilBudi;
+        int InputAngka1,InputAngka2,InputAngka3,InputAngka4,InputAngka5,InputAngka6,i;
+        int PointAndi=0,PointBudi=0;
+        
         System.out.println("========================");
         System.out.print("Input Angka Kartu Andi: ");
         InputAngka1 = in.nextInt();
@@ -27,13 +28,22 @@ public class PRAK104_2110817310002_MuhammadAsandyPutra {
         InputAngka6 = in.nextInt();
         
         System.out.println("========================");
-        HasilAndi = InputAngka1+InputAngka2+InputAngka3;
-        HasilBudi = InputAngka4+InputAngka5+InputAngka6;
+        int [] Andi0 = {InputAngka1,InputAngka2,InputAngka3};
+        int [] Budi0 = {InputAngka4,InputAngka5,InputAngka6};
         
-        if (HasilAndi>HasilBudi){
+        
+        for(i=0;i<3;i++){
+            if(Andi0[i]>Budi0[i]){
+                PointAndi++;
+            }else if (Andi0[i] < Budi0[i]){
+                PointBudi++;
+            }
+        }
+        
+        if (PointAndi>PointBudi){
             System.out.print("Andi Menang!");
             
-        }else if (HasilAndi==HasilBudi){
+        }else if (PointAndi==PointBudi){
             System.out.println("Seri!");
         
         
