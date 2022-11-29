@@ -22,16 +22,6 @@ this.width = w;
 }
 
 
-
-//-----------------------------------------
-// Returns the surface area of the sphere.
-//-----------------------------------------
-
-public double area()
-{
-return length*width;
-}
-
 public double getwidth(){
  return width;   
 }
@@ -49,6 +39,15 @@ public void setLength(double l){
     this.length=l;
     
 }
+//-----------------------------------------
+// Returns the surface area of the sphere.
+//-----------------------------------------
+
+public double area()
+{
+return length*width;
+}
+
 //-----------------------------------
 // Returns the sphere as a String.
 //-----------------------------------
